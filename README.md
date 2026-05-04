@@ -108,15 +108,15 @@ Use email_writer to draft a friendly follow-up to a prospect who hasn't responde
 Use youtube_video_info to look up dQw4w9WgXcQ and summarize what the video is about.
 ```
 
-## What's in v0.2
+## What's in v0.3
 
-50 tools shipped:
+77 tools shipped:
 
-- **14 Tier 1 tools** (local computation): JSON formatter, Base64, URL encoder, hash generator, word counter, UUID generator, password generator, lorem ipsum generator, slug generator, text case converter, text line tools (sort/dedupe/shuffle), timestamp converter, color converter
+- **40 Tier 1 tools** (local computation, no network): hand-written core utilities (JSON formatter, Base64, URL encoder, hash generator, word counter, UUID, password, lorem ipsum, slug, text case, line tools, timestamp, color converter) plus auto-extracted utilities across calculator, converter, developer, text, generator, accessibility, security, career, color, and writing categories
 - **33 Tier 2 tools** (prompt-driven generation): blog outline, code explainer, cover letter, email writer, grammar fixer, meeting notes, meta description, paraphraser, product description, social caption, subject line, summarizer, tone rewriter, YouTube summarizer, plus social-media generators for Instagram, LinkedIn, Pinterest, Threads, TikTok, Twitter/X, YouTube
 - **3 Tier 3 tools** (live data): YouTube video info, YouTube channel info, YouTube keyword autocomplete
 
-The full library of 350+ tools is being added in batches. Star the repo to follow progress.
+The full library of 350+ tools is being added in batches. Browser-API tools (image, video, audio, OCR, PDF, spreadsheet, design, font, chart, document) are in the v0.4 roadmap. Star the repo to follow progress.
 
 ## Configuration
 
