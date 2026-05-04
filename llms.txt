@@ -1,0 +1,28 @@
+# Wild and Free Tools
+
+> A Model Context Protocol (MCP) server that exposes 350+ free utility tools to AI coding agents. Web versions live at wildandfreetools.com.
+
+The server provides three categories of tools:
+
+1. Local computation tools (JSON formatting, Base64, hashes, text counters, regex, calculators) that run inside the MCP process with zero network calls.
+2. Generation tools (email writing, captions, scripts, summaries) that hand a tested prompt to the calling agent's own LLM, so they work with any model.
+3. Live-data tools (YouTube metadata) that call public endpoints on wildandfreetools.com.
+
+Compatible with Claude Code, Claude Desktop, Cursor, Windsurf, OpenAI Codex, Gemini CLI, Cline, Continue, Aider, Goose, Replit Agent, and any agent that supports Model Context Protocol. Works with any underlying model: GPT-5, Claude, Gemini, DeepSeek, Qwen, Llama, Grok, Mistral, local models via Ollama or LM Studio.
+
+## Documentation
+
+- [README](https://github.com/wildandfreetools/wild-and-free-tools/blob/main/README.md): install instructions and per-agent configuration
+- [AGENTS.md](https://github.com/wildandfreetools/wild-and-free-tools/blob/main/AGENTS.md): tool-authoring conventions and runtime behavior
+- [Live tool catalog](https://wildandfreetools.com): browser version of every tool
+
+## Source
+
+- [GitHub repository](https://github.com/wildandfreetools/wild-and-free-tools)
+- [Issue tracker](https://github.com/wildandfreetools/wild-and-free-tools/issues)
+- [License (MIT)](https://github.com/wildandfreetools/wild-and-free-tools/blob/main/LICENSE)
+
+## Brand
+
+- [Profile](https://github.com/wildandfreetools)
+- [Website](https://wildandfreetools.com)

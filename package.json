@@ -1,0 +1,56 @@
+{
+  "name": "wild-and-free-tools",
+  "version": "0.1.0",
+  "description": "350+ free tools for AI coding agents. Pure utility, no signup, no paywall. Works with Claude, Cursor, Codex, Gemini, Cline, and any MCP-compatible agent.",
+  "type": "module",
+  "bin": {
+    "wild-and-free-tools": "src/index.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini",
+    "cline",
+    "agents",
+    "ai-tools",
+    "developer-tools",
+    "free-tools",
+    "utility-tools"
+  ],
+  "homepage": "https://wildandfreetools.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wildandfreetools/wild-and-free-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wildandfreetools/wild-and-free-tools/issues"
+  },
+  "author": "Wild and Free Tools (https://wildandfreetools.com)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "files": [
+    "src/",
+    "data/tools-manifest.json",
+    "AGENTS.md",
+    "SKILL.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "README.md",
+    "LICENSE"
+  ]
+}
