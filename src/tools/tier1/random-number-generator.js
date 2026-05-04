@@ -28,7 +28,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "random_number_generator",
-  description: "Run the random number generator tool. calculator category.",
+  description: "Generate one or more random integers within a configurable minimum and maximum range.",
   inputSchema: {
     "type": "object",
     "properties": {

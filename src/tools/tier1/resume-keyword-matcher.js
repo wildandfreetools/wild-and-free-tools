@@ -18,7 +18,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "resume_keyword_matcher",
-  description: "Run the resume keyword matcher tool. career category.",
+  description: "Compare a resume to a job description and report matching, missing, and surplus keywords.",
   inputSchema: {
     "type": "object",
     "properties": {

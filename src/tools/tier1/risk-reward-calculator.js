@@ -28,7 +28,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "risk_reward_calculator",
-  description: "Run the risk reward calculator tool. calculator category.",
+  description: "Calculate risk-to-reward ratio and break-even win rate for a trade given entry, stop-loss, and target.",
   inputSchema: {
     "type": "object",
     "properties": {

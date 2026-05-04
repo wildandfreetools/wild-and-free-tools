@@ -13,7 +13,7 @@ const OUTPUTS = ["results","score-number","score-label"];
 
 export default {
   name: "headline_analyzer",
-  description: "Run the headline analyzer tool. writing category.",
+  description: "Score a headline on length, word balance, sentiment, common/uncommon word ratio, and clarity.",
   inputSchema: {
     "type": "object",
     "properties": {

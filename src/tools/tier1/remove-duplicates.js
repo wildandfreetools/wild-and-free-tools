@@ -13,7 +13,7 @@ const OUTPUTS = ["t-output"];
 
 export default {
   name: "remove_duplicates",
-  description: "Run the remove duplicates tool. text category.",
+  description: "Remove duplicate lines from a text input, with optional case-sensitivity and trim controls.",
   inputSchema: {
     "type": "object",
     "properties": {

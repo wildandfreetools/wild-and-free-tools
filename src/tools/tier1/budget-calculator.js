@@ -28,7 +28,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "budget_calculator",
-  description: "Run the budget calculator tool. calculator category.",
+  description: "Calculate a monthly budget breakdown across income and expense categories, returning surplus or deficit.",
   inputSchema: {
     "type": "object",
     "properties": {

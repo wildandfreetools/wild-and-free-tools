@@ -28,7 +28,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "dca_calculator",
-  description: "Run the dca calculator tool. calculator category.",
+  description: "Calculate dollar-cost-averaging returns over a period given a recurring investment amount and asset price history.",
   inputSchema: {
     "type": "object",
     "properties": {

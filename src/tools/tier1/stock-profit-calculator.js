@@ -33,7 +33,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "stock_profit_calculator",
-  description: "Run the stock profit calculator tool. calculator category.",
+  description: "Calculate profit and loss for a stock trade given buy price, sell price, share count, and commissions.",
   inputSchema: {
     "type": "object",
     "properties": {

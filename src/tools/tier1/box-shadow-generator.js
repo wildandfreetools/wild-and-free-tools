@@ -7,7 +7,7 @@ const OUTPUTS = ["code-output"];
 
 export default {
   name: "box_shadow_generator",
-  description: "Run the box shadow generator tool. developer category.",
+  description: "Generate CSS box-shadow values from offset, blur, spread, color, and inset settings.",
   inputSchema: {
     "type": "object",
     "properties": {},

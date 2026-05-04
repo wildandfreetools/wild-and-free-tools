@@ -28,7 +28,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "options_profit_calculator",
-  description: "Run the options profit calculator tool. calculator category.",
+  description: "Calculate profit and loss at expiration for a single-leg option trade given strike, premium, and underlying price.",
   inputSchema: {
     "type": "object",
     "properties": {

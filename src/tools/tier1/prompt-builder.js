@@ -38,7 +38,7 @@ const OUTPUTS = ["outputBox","outputBody"];
 
 export default {
   name: "prompt_builder",
-  description: "Run the prompt builder tool. ai category.",
+  description: "Assemble a structured LLM prompt from role, context, task, format, and constraint fields.",
   inputSchema: {
     "type": "object",
     "properties": {

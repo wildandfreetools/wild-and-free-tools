@@ -18,7 +18,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "age_calculator",
-  description: "Run the age calculator tool. calculator category.",
+  description: "Calculate age in years, months, and days from a date of birth, optionally as of a target date.",
   inputSchema: {
     "type": "object",
     "properties": {

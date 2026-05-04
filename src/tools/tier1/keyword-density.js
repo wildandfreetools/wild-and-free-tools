@@ -18,7 +18,7 @@ const OUTPUTS = ["target-result"];
 
 export default {
   name: "keyword_density",
-  description: "Run the keyword density tool. writing category.",
+  description: "Calculate keyword density and frequency for one-, two-, and three-word phrases in a block of text.",
   inputSchema: {
     "type": "object",
     "properties": {

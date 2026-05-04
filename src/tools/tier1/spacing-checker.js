@@ -28,7 +28,7 @@ const OUTPUTS = ["wcagResults","fontResults","codeOutput"];
 
 export default {
   name: "spacing_checker",
-  description: "Run the spacing checker tool. accessibility category.",
+  description: "Detect double spaces, leading and trailing whitespace, and inconsistent spacing patterns in text.",
   inputSchema: {
     "type": "object",
     "properties": {

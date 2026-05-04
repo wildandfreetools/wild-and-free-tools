@@ -13,7 +13,7 @@ const OUTPUTS = ["resultSection","healthScore"];
 
 export default {
   name: "email_validator",
-  description: "Run the email validator tool. data category.",
+  description: "Validate an email address syntactically and report common deliverability issues like disposable domains.",
   inputSchema: {
     "type": "object",
     "properties": {

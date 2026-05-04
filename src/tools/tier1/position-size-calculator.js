@@ -28,7 +28,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "position_size_calculator",
-  description: "Run the position size calculator tool. calculator category.",
+  description: "Calculate trade position size given account balance, risk percent, entry price, and stop-loss price.",
   inputSchema: {
     "type": "object",
     "properties": {

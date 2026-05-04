@@ -23,7 +23,7 @@ const OUTPUTS = ["output"];
 
 export default {
   name: "passphrase_generator",
-  description: "Run the passphrase generator tool. generator category.",
+  description: "Generate a memorable passphrase from a wordlist with configurable word count and separator.",
   inputSchema: {
     "type": "object",
     "properties": {

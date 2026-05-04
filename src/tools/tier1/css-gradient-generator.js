@@ -28,7 +28,7 @@ const OUTPUTS = ["code-output"];
 
 export default {
   name: "css_gradient_generator",
-  description: "Run the css gradient generator tool. developer category.",
+  description: "Generate CSS linear or radial gradient code from color stops and direction.",
   inputSchema: {
     "type": "object",
     "properties": {

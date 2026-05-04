@@ -33,7 +33,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "dividend_calculator",
-  description: "Run the dividend calculator tool. calculator category.",
+  description: "Calculate annual dividend income and yield-on-cost from share count, share price, and dividend rate.",
   inputSchema: {
     "type": "object",
     "properties": {

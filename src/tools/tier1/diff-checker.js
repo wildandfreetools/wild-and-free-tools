@@ -18,7 +18,7 @@ const OUTPUTS = ["t-output"];
 
 export default {
   name: "diff_checker",
-  description: "Run the diff checker tool. developer category.",
+  description: "Compare two text inputs and return a line-by-line diff highlighting additions, deletions, and unchanged lines.",
   inputSchema: {
     "type": "object",
     "properties": {

@@ -13,7 +13,7 @@ const OUTPUTS = ["resultsPanel","scoreBanner","scoreIcon","scoreText"];
 
 export default {
   name: "heading_validator",
-  description: "Run the heading validator tool. accessibility category.",
+  description: "Validate the heading hierarchy (h1 through h6) of an HTML document for accessibility and SEO best practices.",
   inputSchema: {
     "type": "object",
     "properties": {

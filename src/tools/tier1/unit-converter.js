@@ -23,7 +23,7 @@ const OUTPUTS = ["result-value","result-label"];
 
 export default {
   name: "unit_converter",
-  description: "Run the unit converter tool. converter category.",
+  description: "Convert between units across length, weight, temperature, volume, area, time, and speed.",
   inputSchema: {
     "type": "object",
     "properties": {

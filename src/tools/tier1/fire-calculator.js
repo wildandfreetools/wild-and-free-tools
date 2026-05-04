@@ -33,7 +33,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "fire_calculator",
-  description: "Run the fire calculator tool. calculator category.",
+  description: "Calculate financial-independence (FIRE) numbers: target nest egg, savings rate impact, and years to retirement.",
   inputSchema: {
     "type": "object",
     "properties": {

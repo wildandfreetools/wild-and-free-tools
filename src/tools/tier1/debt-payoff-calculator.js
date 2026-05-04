@@ -13,7 +13,7 @@ const OUTPUTS = ["result"];
 
 export default {
   name: "debt_payoff_calculator",
-  description: "Run the debt payoff calculator tool. calculator category.",
+  description: "Calculate the payoff timeline and total interest for a debt given balance, APR, and monthly payment.",
   inputSchema: {
     "type": "object",
     "properties": {

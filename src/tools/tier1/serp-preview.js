@@ -43,7 +43,7 @@ const OUTPUTS = ["scorePanel","scoreBadge","scoreItems","codeOutput"];
 
 export default {
   name: "serp_preview",
-  description: "Run the serp preview tool. seo category.",
+  description: "Preview how a page title, URL, and meta description will render in Google search results, with length checks.",
   inputSchema: {
     "type": "object",
     "properties": {
