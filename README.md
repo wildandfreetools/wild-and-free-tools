@@ -115,31 +115,42 @@ The full library of 350+ tools is being added in batches. Browser-API tools (ima
 <!-- TOOLS-TABLE:START -->
 ## Tools in this release
 
-75 tools registered. Click any tool name to view its source. Web versions of every tool live at [wildandfreetools.com](https://wildandfreetools.com).
+87 tools registered. Click any tool name to view its source. Web versions of every tool live at [wildandfreetools.com](https://wildandfreetools.com).
 
-### Tier 1: local computation (38)
+### Tier 1: local computation (50)
 
 Run entirely inside the MCP server process. No network calls, no LLM calls, deterministic output.
 
 | Tool | What it does |
 |---|---|
 | [`age_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/age-calculator.js) | Calculate age in years, months, and days from a date of birth, optionally as of a target date. |
+| [`aspect_ratio_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/aspect-ratio-calculator.js) | Calculate aspect ratios and target dimensions. Given any two of {width, height, ratio}, computes the third. Reports the simplified ratio (e.g. 1920x1080 → 16:9). |
 | [`base64_encoder`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/base64-encoder.js) | Encode text to Base64 or decode Base64 back to text. Standard Base64 with optional URL-safe variant. |
 | [`box_shadow_generator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/box-shadow-generator.js) | Generate CSS box-shadow values from offset, blur, spread, color, and inset settings. |
 | [`budget_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/budget-calculator.js) | Calculate a monthly budget breakdown across income and expense categories, returning surplus or deficit. |
 | [`color_converter`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/color-converter.js) | Convert between color formats: HEX, RGB, RGBA, HSL. Accepts a HEX string or rgb()/hsl() expression as input. |
 | [`css_gradient_generator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/css-gradient-generator.js) | Generate CSS linear or radial gradient code from color stops and direction. |
+| [`csv_column_mapper`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/csv-column-mapper.js) | Rename, reorder, drop, or add columns in a CSV. Pass a JSON mapping object or an array of column specs. Header row is rewritten and rows are projected to match. |
+| [`csv_deduplicator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/csv-deduplicator.js) | Remove duplicate rows from CSV text. Optionally dedupe by a single column (matching by name from the header row) instead of full-row equality. |
+| [`csv_row_filter`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/csv-row-filter.js) | Filter CSV rows by matching a column against a value or regex. Supports equals, not-equals, contains, regex, and numeric comparisons. Header row is preserved. |
+| [`csv_sanitizer`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/csv-sanitizer.js) | Clean CSV text by trimming whitespace, normalizing smart quotes to ASCII, collapsing internal whitespace, removing fully empty rows, and stripping the BOM. All transforms are configurable. |
+| [`csv_to_json`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/csv-to-json.js) | Parse CSV text into a JSON array. Handles quoted fields, escaped quotes, and configurable delimiter. By default the first row is used as object keys. |
 | [`dca_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/dca-calculator.js) | Calculate dollar-cost-averaging returns over a period given a recurring investment amount and asset price history. |
 | [`debt_payoff_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/debt-payoff-calculator.js) | Calculate the payoff timeline and total interest for a debt given balance, APR, and monthly payment. |
 | [`diff_checker`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/diff-checker.js) | Compare two text inputs and return a line-by-line diff highlighting additions, deletions, and unchanged lines. |
 | [`dividend_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/dividend-calculator.js) | Calculate annual dividend income and yield-on-cost from share count, share price, and dividend rate. |
+| [`domain_extractor`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/domain-extractor.js) | Extract unique domains from any text containing URLs or email addresses. Returns the deduplicated list of bare domains, optionally including subdomains. |
 | [`email_validator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/email-validator.js) | Validate an email address syntactically and report common deliverability issues like disposable domains. |
 | [`fire_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/fire-calculator.js) | Calculate financial-independence (FIRE) numbers: target nest egg, savings rate impact, and years to retirement. |
 | [`hash_generator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/hash-generator.js) | Generate cryptographic hash digests (md5, sha1, sha256, sha384, sha512) from text input. Returns hex-encoded digest. |
 | [`heading_validator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/heading-validator.js) | Validate the heading hierarchy (h1 through h6) of an HTML document for accessibility and SEO best practices. |
 | [`headline_analyzer`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/headline-analyzer.js) | Score a headline on length, word balance, sentiment, common/uncommon word ratio, and clarity. |
+| [`html_entities`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/html-entities.js) | Encode text to HTML entities or decode HTML entities back to text. Handles named entities (&amp;, &lt;), numeric (&#39;), and hex (&#x2F;). |
 | [`json_formatter`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/json-formatter.js) | Format, validate, and minify JSON. Pretty-prints valid JSON with 2-space indentation, or minifies it. Returns parse errors with descriptive messages. |
+| [`json_to_csv`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/json-to-csv.js) | Convert a JSON array of objects into CSV text. Auto-derives the header from the union of keys across all rows. Escapes quotes, delimiters, and newlines. |
+| [`jwt_decoder`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/jwt-decoder.js) | Decode a JSON Web Token (JWT). Returns the parsed header and payload, the algorithm, and expiration info. Does NOT verify the signature. |
 | [`keyword_density`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/keyword-density.js) | Calculate keyword density and frequency for one-, two-, and three-word phrases in a block of text. |
+| [`lead_list_cleaner`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/lead-list-cleaner.js) | Clean a list of email addresses for outreach. Normalizes case, strips junk characters, removes duplicates, and flags invalid syntax, disposable domains, and role-based addresses. |
 | [`lorem_ipsum_generator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/lorem-ipsum-generator.js) | Generate placeholder Lorem Ipsum text in words, sentences, or paragraphs. |
 | [`options_profit_calculator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/options-profit-calculator.js) | Calculate profit and loss at expiration for a single-leg option trade given strike, premium, and underlying price. |
 | [`passphrase_generator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/passphrase-generator.js) | Generate a memorable passphrase from a wordlist with configurable word count and separator. |
@@ -161,6 +172,7 @@ Run entirely inside the MCP server process. No network calls, no LLM calls, dete
 | [`url_encoder`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/url-encoder.js) | URL-encode or URL-decode text. Encodes special characters into percent-encoding for safe use in URLs and query strings, or decodes them back. |
 | [`uuid_generator`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/uuid-generator.js) | Generate one or more UUIDs (v4 by default). Useful for creating unique identifiers, request IDs, or test data. |
 | [`word_counter`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/word-counter.js) | Count words, characters (with and without spaces), sentences, paragraphs, and estimated reading time for a text input. |
+| [`xml_to_json`](https://github.com/wildandfreetools/wild-and-free-tools/tree/main/src/tools/tier1/xml-to-json.js) | Parse XML text into JSON. Element children become object keys, repeated children become arrays, attributes are prefixed with @, and text content is preserved. |
 
 ### Tier 2: prompt-driven generation (34)
 

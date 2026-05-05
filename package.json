@@ -1,6 +1,6 @@
 {
   "name": "wild-and-free-tools",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "350+ free tools for AI coding agents. Pure utility, no signup, no paywall. Works with Claude, Cursor, Codex, Gemini, Cline, and any MCP-compatible agent.",
   "type": "module",
   "bin": {
